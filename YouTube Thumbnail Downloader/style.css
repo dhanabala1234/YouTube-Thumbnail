@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" ,sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #57E2E8;
+
+}
+form{
+    background-color: white;
+    padding: 30px;
+    width: 450px;
+    border-radius: 10px;
+}
+form .header{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bolder;
+    color: tomato;
+    text-align: center;
+}
+form .input-field{
+    margin:30px 0;
+   position: relative;
+}
+form .input-field .title {
+    font-size: 18px;
+    font-weight: 600;
+}
+form .input-field .inp{
+    width: 100%;
+    height:50px;
+    margin-top: 10px;
+    
+}
+form .input-field .inp input{
+    width: 100%;
+    height:100%;
+    border: none;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: #f1f1f7;
+    font-family: "Noto Sans",sans-serif;
+    outline:none;
+}
+form .input-field .bottom{
+     width:100%;
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     background-color: coral;
+     transition: transform 0.3s ease;
+     height: 2px;
+}
+
+.submit {
+    height:220px;
+    border: 2px dashed tomato;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.example{
+    width: 100%;
+    border-radius: 5px;
+    display: none;
+}
+.active .example{
+    display:block;
+}
+.active .paste{
+    display:none;
+}
+.active .icon{
+    display:none;
+}
+.icon{
+    color:tomato;
+    font-size: 60px;
+}
+.paste{
+    color: violet;
+    font-weight: bold;
+}
+.btn-sub{
+    width: 100%;
+    border-radius: 5px;
+    height: 50px;
+    border: none;
+    margin-top: 15px;
+    background-color:tomato;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 16px;
+    cursor: pointer;
+}
